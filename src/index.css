@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Finger+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Finger+Paint&display=swap"); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  body {
+    .background-color: #dde1e7;
+    background-color: #ECF0F3;
+    color: #2f3338;
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  hr {
+    margin: 100px auto;
+    width: 80%;
+    border: 20px solid #2f3338;
+  }
+
+  .shadow-default {
+    background: linear-gradient(45deg, #dde1e7, #dcdedf);
+    box-shadow: -5px -3px 5px #ffffff73, 3px 3px 10px rgba(94, 104, 121, 0.288);
+  }
+  .inner-shadow {
+    box-shadow: inset -5px -5px 5px #ffffff73,
+      inset 3px 3px 10px rgba(94, 104, 121, 0.288);
+    display: flex;
+  }
+
+  .box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 5px #ffffff73, 3px 3px 10px rgba(94, 104, 121, 0.288);
+    background: linear-gradient(-90deg, #dde1e7, #c1c2c3);
+    z-index: 1;
+  }
+
+  .box::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 94%;
+    height: 94%;
+    box-shadow: inset -5px -5px 5px #ffffff73,
+      inset 3px 3px 10px rgba(77, 80, 85, 0.288);
+    background: linear-gradient(-90deg, #dde1e7, #d3d4d5);
+  }
+}

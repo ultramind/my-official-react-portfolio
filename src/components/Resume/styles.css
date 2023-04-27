@@ -1,0 +1,28 @@
+.content {
+  animation: moving 0.5s ease;
+}
+
+.bar::before {
+  animation: loading 0.5s ease;
+  animation-delay: 0.3s;
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes loading {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

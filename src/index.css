@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 @layer {
-  body {
-    .background-color: #dde1e7;
+  body{
+    /* .background-color: #dde1e7; */
     background-color: #ECF0F3;
     color: #2f3338;
     font-family: "Ubuntu", sans-serif;
@@ -22,6 +22,7 @@
     background: linear-gradient(45deg, #dde1e7, #dcdedf);
     box-shadow: -5px -3px 5px #ffffff73, 3px 3px 10px rgba(94, 104, 121, 0.288);
   }
+  
   .inner-shadow {
     box-shadow: inset -5px -5px 5px #ffffff73,
       inset 3px 3px 10px rgba(94, 104, 121, 0.288);

@@ -7,12 +7,30 @@ import "./style.css";
 
 const MobileHeadeer = () => {
   const [toggle, setToggle] = useState(false);
+  const [navEffect, setNavEffect] = useState(false);
+  const activateStickyNav = () => {
+    if (window.scrollY >= 150) {
+      setNavEffect(true);
+    } else {
+      setNavEffect(false);
+    }
+  };
+
+  // adding the eventListner
+  addEventListener("scroll", activateStickyNav);
+
   // handle toggle
   const handleToggle = () => {
     setToggle(!toggle);
   };
   return (
-    <div className="header relative flex justify-between items-center px-6 py-2 sticky top-0 z-10 bg-[#dde1e7] shadow-xl md:hidden">
+    <div
+      className={
+        navEffect
+          ? "header flex justify-between items-center px-6 py-2 sticky top-0 bg-[#dde1e7] shadow-2xl md:hidden z-10 ease-in-out duration-100"
+          : "header flex justify-between items-center px-6 py-2 relative top-0 bg-transparent border-b-2 border-gray-8 z-10 md:hidden ease-in-out duration-200"
+      }
+    >
       {/* logo */}
       <div className="logo flex justify-center items-center space-x-2">
         <div className="w-10 h-10 bg-gray-800 rounded-full overflow-hidden">

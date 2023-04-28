@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "../../assets/images/author/footer-img.png";
 
 const Header = () => {
+  const [navEffect, setNavEffect] = useState(false);
+  const activateStickyNav = () => {
+    if (window.scrollY >= 150) {
+      setNavEffect(true);
+    } else {
+      setNavEffect(false);
+    }
+  };
+
+  // adding the eventListner
+  addEventListener("scroll", activateStickyNav);
   return (
     <>
-      <div className="hidden md:block relative mx-auto border-b-2 border-gray-300">
+      <div
+        className={
+          navEffect == true
+            ? "hidden md:block mx-auto border-b-2 border-gray-300 sticky top-0 left-0 right-0 shadow-lg md:bg-[#ECF0F3] z-10 ease-in-out duration-300"
+            : "hidden md:block relative top-0 left-0 right-0 mx-auto border-b-2 border-gray-300 md:bg-transparent z-10 ease-in-out duration-300"
+        }
+      >
         <div className="header flex justify-between items-center px-24 py-2">
           {/* logo */}
           <div className="logo flex justify-center items-center space-x-2">

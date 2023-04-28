@@ -19,7 +19,7 @@ const Contact = () => {
         <h1 className="text-4xl font-bold md:text-6xl">Contact With Me</h1>
       </div>
       <div className="space-y-12 md:flex mt-16 md:gap-12 md:space-y-0">
-        <div className="p-4 space-y-4 shadow-default rounded-lg md:flex-[30%] ">
+        <div className="p-6 space-y-4 shadow-default rounded-lg md:flex-[30%] ">
           <div class="card flex-col space-y-4">
             <div>
               <img src={img} className="w-[100%] rounded-lg" alt="" />

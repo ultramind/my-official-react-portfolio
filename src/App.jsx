@@ -1,3 +1,4 @@
+import { AiOutlineArrowUp } from "react-icons/ai";
 import "./App.css";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -11,7 +12,7 @@ import Testimonial from "./components/Testimonial";
 
 function App() {
   return (
-    <div>
+    <div className="relative">
       <Header />
       <MobileHeadeer />
       <Hero />
@@ -27,6 +28,9 @@ function App() {
       <Contact />
       <hr className="w-[100%] border-2 border-gray-300" />
       <Footer />
+      <button className="p-4 shadow-default rounded-full text-primary font-bold text-2xl fixed right-8 bottom-8">
+        <AiOutlineArrowUp />
+      </button>
     </div>
   );
 }

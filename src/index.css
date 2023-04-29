@@ -1,15 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Finger+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Finger+Paint&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer {
-  body{
+  body {
     /* .background-color: #dde1e7; */
-    background-color: #ECF0F3;
+    background-color: #ecf0f3;
     color: #2f3338;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Rancho", cursive;
+  }
+
+  p {
+    line-height: 30px;
+    font-size: 26px;
   }
 
   hr {
@@ -22,7 +26,7 @@
     background: linear-gradient(45deg, #dde1e7, #dcdedf);
     box-shadow: -5px -3px 5px #ffffff73, 3px 3px 10px rgba(94, 104, 121, 0.288);
   }
-  
+
   .inner-shadow {
     box-shadow: inset -5px -5px 5px #ffffff73,
       inset 3px 3px 10px rgba(94, 104, 121, 0.288);

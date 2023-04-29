@@ -19,7 +19,8 @@ const MobileHeadeer = () => {
   // adding the eventListner
   addEventListener("scroll", activateStickyNav);
 
-  // handle toggle
+  // handle toggle8162140131
+
   const handleToggle = () => {
     setToggle(!toggle);
   };

@@ -20,10 +20,10 @@ const Hero = () => {
       {/* Hero left content */}
       <div className="left space-y-6 md:w-[85%] md:py-0 md:pr-16 md:space-y-10">
         <h3 className="text-primary">WELCOME TO MY WORLD</h3>
-        <h1 className="text-3xl font-bold md:text-6xl" data-aos="fade-up">
+        <h1 className="text-5xl font-bold md:text-6xl" data-aos="fade-up">
           Hi, I’m Akachukwu <br />a Developer.
         </h1>
-        <p className="leading-8 md:text-lg">
+        <p className="md:w-[80%]">
           Highly skilled FullStack Developer with [Number of Years] years of
           experience in developing robust and scalable web applications.
           Proficient in multiple programming languages, frameworks, and
@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="flex flex-col space-y-10 md:flex-row md:items-center md:justify-between md:space-y-0">
           {/* socials */}
           <div className="md:flex-col ">
-            <h3 className="font-medium text-lg">Find me with</h3>
+            <h3 className="font-bold text-2xl">Find me with</h3>
             <div className="mt-8 space-x-4">
               <a
                 href="#"
@@ -71,7 +71,7 @@ const Hero = () => {
           </div>
           {/* skills */}
           <div className="">
-            <h3 className="font-medium text-lg">Best Skills</h3>
+            <h3 className="font-bold text-2xl">Best Skills</h3>
             <div className="mt-8 space-x-4">
               <a
                 href="#"

@@ -9,8 +9,26 @@ import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import Services from "./components/Services";
 import Testimonial from "./components/Testimonial";
+import { useEffect, useState } from "react";
+import { data } from "autoprefixer";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+  const [navEffect, setNavEffect] = useState(false);
+  const onscrollEffect = () => {
+    if (window.scrollY >= 350) {
+      setNavEffect(true);
+    } else {
+      setNavEffect(false);
+    }
+  };
+
+  addEventListener("scroll", onscrollEffect);
+
   return (
     <div className="relative">
       <Header />
@@ -28,9 +46,15 @@ function App() {
       <Contact />
       <hr className="w-[100%] border-2 border-gray-300" />
       <Footer />
-      <button className="p-4 shadow-default rounded-full text-primary font-bold text-2xl fixed right-8 bottom-8">
+      <a
+        href="#"
+        className={
+          navEffect &&
+          "p-4 shadow-default rounded-full text-primary font-bold text-2xl fixed right-4 bottom-8 z-10 ease-in-out duration-300"
+        }
+      >
         <AiOutlineArrowUp />
-      </button>
+      </a>
     </div>
   );
 }

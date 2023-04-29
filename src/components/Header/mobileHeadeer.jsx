@@ -47,7 +47,7 @@ const MobileHeadeer = () => {
       <div
         className={
           toggle !== true
-            ? "z-10 p-4 absolute top-0 -left-[350px] w-[80%] bg-[#ECF0F3] h-screen opacity-100 space-y-8 ease-out duration-300"
+            ? "z-10 p-4 absolute top-0 -left-[850px] w-[80%] bg-[#ECF0F3] h-screen opacity-100 space-y-8 ease-out duration-300"
             : "z-10 p-4 absolute top-0 left-0 w-[80%] bg-[#ECF0F3] h-screen opacity-100 space-y-8 ease-in duration-300"
         }
       >

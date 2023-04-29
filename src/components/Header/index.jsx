@@ -22,7 +22,7 @@ const Header = () => {
             : "hidden md:block relative top-0 left-0 right-0 mx-auto border-b-2 border-gray-300 md:bg-transparent z-10 ease-in-out duration-300"
         }
       >
-        <div className="header flex justify-between items-center px-24 py-2">
+        <div className="header flex justify-between items-center px-24 py-2 lg:px-8">
           {/* logo */}
           <div className="logo flex justify-center items-center space-x-2">
             <div className="w-15 h-15 bg-gray-800 rounded-full overflow-hidden">

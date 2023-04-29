@@ -16,25 +16,25 @@ const Hero = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="flex flex-col-reverse p-4 justify-between items-center py-4 mt-10 mx-auto md:mt-0 md:h-screen md:flex-row md:items-starts md:px-[10%] md:py-24">
+    <div className="flex flex-col-reverse p-4 justify-between items-center py-4 mt-10 mx-auto lg:px-8 md:mt-0 md:h-screen md:flex-row md:items-starts md:px-[10%] md:py-24">
       {/* Hero left content */}
       <div className="left space-y-6 md:w-[85%] md:py-0 md:pr-16 md:space-y-10">
         <h3 className="text-primary">WELCOME TO MY WORLD</h3>
         <h1 className="text-5xl font-bold md:text-6xl" data-aos="fade-up">
           Hi, I’m Akachukwu <br />a Developer.
         </h1>
-        <p className="md:w-[80%]">
+        <p className="lg:w-full md:w-[80%]">
           Highly skilled FullStack Developer with [Number of Years] years of
           experience in developing robust and scalable web applications.
           Proficient in multiple programming languages, frameworks, and
           technologies, including [List of Technologies].
         </p>
         {/* CTA buttons */}
-        <div className="flex flex-col space-y-10 md:flex-row md:items-center md:justify-between md:space-y-0">
+        <div className="flex flex-col space-y-10 lg:flex-col lg:items-start lg:space-y-6 md:flex-row md:items-center md:justify-between md:space-y-0">
           {/* socials */}
           <div className="md:flex-col ">
             <h3 className="font-bold text-2xl">Find me with</h3>
-            <div className="mt-8 space-x-4">
+            <div className="mt-6 space-x-4">
               <a
                 href="#"
                 className="p-4 shadow-default inline-block"
@@ -72,7 +72,7 @@ const Hero = () => {
           {/* skills */}
           <div className="">
             <h3 className="font-bold text-2xl">Best Skills</h3>
-            <div className="mt-8 space-x-4">
+            <div className="mt-6 space-x-4">
               <a
                 href="#"
                 className="p-4 shadow-default inline-block"

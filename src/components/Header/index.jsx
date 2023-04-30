@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import img from "../../assets/images/author/footer-img.png";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [navEffect, setNavEffect] = useState(false);
@@ -13,6 +14,9 @@ const Header = () => {
 
   // adding the eventListner
   addEventListener("scroll", activateStickyNav);
+  const handleSetActive = (to) => {
+    console.log(to);
+  };
   return (
     <>
       <div
@@ -32,22 +36,66 @@ const Header = () => {
           </div>
           {/* Links */}
           <div className="nav flex justify-between items-center">
-            <a href="#" className="ml-10 text-2xl">Home</a>
-            <a href="#" className="ml-10 text-2xl">
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="ml-10 text-2xl cursor-pointer"
+            >
+              Home
+            </Link>
+            {/* <Link
+              to=""
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="ml-10 text-2xl cursor-pointer"
+            >
               About us
-            </a>
-            <a href="#" className="ml-10 text-2xl">
+            </Link> */}
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="ml-10 text-2xl cursor-pointer"
+            >
               Services
-            </a>
-            <a href="#" className="ml-10 text-2xl">
-              Protfolio
-            </a>
-            <a href="#" className="ml-10 text-2xl">
+            </Link>
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="ml-10 text-2xl cursor-pointer"
+            >
+              Portfolio
+            </Link>
+            <Link
+              to="resume"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="ml-10 text-2xl cursor-pointer"
+            >
               Resume
-            </a>
-            <a href="#" className="ml-10 text-2xl">
+            </Link>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="ml-10 text-2xl cursor-pointer"
+            >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </div>

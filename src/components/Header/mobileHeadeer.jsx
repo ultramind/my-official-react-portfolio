@@ -4,6 +4,7 @@ import img from "../../assets/images/author/footer-img.png";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { TbBrandGithub, TbBrandTwitter } from "react-icons/tb";
 import "./style.css";
+import { Link } from "react-scroll";
 
 const MobileHeadeer = () => {
   const [toggle, setToggle] = useState(false);
@@ -37,7 +38,7 @@ const MobileHeadeer = () => {
         <div className="w-10 h-10 bg-gray-800 rounded-full overflow-hidden">
           <img src={img} alt="" />
         </div>
-        <h1 className="text-2xl font-bold">Akachukwu</h1>
+        <h1 className=" block text-2xl font-bold">Akachukwu</h1>
       </div>
       <AiOutlineAlignRight
         className="text-primary text-3xl font-bold"
@@ -57,7 +58,7 @@ const MobileHeadeer = () => {
             <div className="w-15 h-15 bg-gray-800 rounded-full overflow-hidden">
               <img src={img} className="w-[100%]" alt="" />
             </div>
-            <h1 className="text-2xl font-bold">AKAGOD</h1>
+            <h1 className=" block text-2xl font-bold">Akachukwu</h1>
           </div>
           <AiOutlineClose
             className="text-primary font-bold p-2 items-center rounded-full shadow-default"
@@ -66,27 +67,75 @@ const MobileHeadeer = () => {
           />
         </div>
         <p className="pb-4 border-b-2 border-gray-300">
-          Lorem ipsum dolor sit amet conse ctetur adipisicing elit.
+          A FullStack web Developer...
         </p>
         <div className="flex-col space-y-8">
-          <a href="#" className="block">
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={handleToggle}
+            className=" block text-2xl cursor-pointer"
+          >
             Home
-          </a>
-          <a href="#" className="text-lg block">
-            About us
-          </a>
-          <a href="#" className="text-lg block">
+          </Link>
+          {/* <Link
+              to=""
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onClick={handleToggle}
+              className=" block text-2xl cursor-pointer"
+            >
+              About us
+            </Link> */}
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={handleToggle}
+            className=" block text-2xl cursor-pointer"
+          >
             Services
-          </a>
-          <a href="#" className="text-lg block">
-            Protfolio
-          </a>
-          <a href="#" className="text-lg block">
+          </Link>
+          <Link
+            to="portfolio"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={handleToggle}
+            className=" block text-2xl cursor-pointer"
+          >
+            Portfolio
+          </Link>
+          <Link
+            to="resume"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={handleToggle}
+            className=" block text-2xl cursor-pointer"
+          >
             Resume
-          </a>
-          <a href="#" className="text-lg block">
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={handleToggle}
+            className=" block text-2xl cursor-pointer"
+          >
             Contact
-          </a>
+          </Link>
         </div>
         {/* socials */}
         <div className="footer absolute bottom-16 mb-8">

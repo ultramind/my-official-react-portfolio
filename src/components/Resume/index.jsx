@@ -18,7 +18,7 @@ const Resume = () => {
   };
 
   return (
-    <div className="p-4 my-20 md:p-0 md:py-24 md:mt-0 md:px-6">
+    <div id="resume" className="p-4 my-20 md:p-0 md:py-24 md:mt-0 md:px-6">
       <div className="title text-center  space-y-3" data-aos="fade-up">
         <h3 className="text-primary text-2xl">7+ YEARS OF EXPERIENCE</h3>
         <h1 className="font-bold text-6xl">My Resume</h1>

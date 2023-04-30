@@ -18,7 +18,7 @@ const Contact = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <div className="p-4 md:px-8 mt-20 mb-16 lg:px-24">
+    <div id="contact" className="p-4 md:px-8 mt-20 mb-16 lg:px-24">
       <div className="title text-center space-y-3">
         <h3 className="text-primary text-2xl">Contact</h3>
         <h1 className="text-4xl font-bold md:text-6xl">Contact With Me</h1>

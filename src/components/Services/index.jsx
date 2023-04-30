@@ -12,7 +12,7 @@ const Services = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="p-2 my-20 md:p-6 lg:px-16">
+    <div id="services" className="p-2 my-20 md:p-6 lg:px-16">
       <div
         className="title text-center space-y-3 md:text-left"
         data-aos="fade-up"

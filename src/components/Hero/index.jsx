@@ -16,7 +16,7 @@ const Hero = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="flex flex-col-reverse mb-24 px-4 space-y-8 pt-20 md:pt-10 md:px-12 md:flex-row md:items-center md:space-y-0 lg:items-center lg:px-36 lg:pt-8 lg:h-screen">
+    <div id="home" className="flex flex-col-reverse mb-24 px-4 space-y-8 pt-20 md:pt-10 md:px-12 md:flex-row md:items-center md:space-y-0 lg:items-center lg:px-36 lg:pt-8 lg:h-screen">
       {/* Hero left content */}
       <div className="left space-y-6 md:w-[85%] md:py-0 md:pr-16 md:space-y-10">
         <h3 className="text-primary">WELCOME TO MY WORLD</h3>

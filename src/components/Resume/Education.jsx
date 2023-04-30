@@ -60,7 +60,7 @@ const Education = ({ toggleState }) => {
       {/* Seconf colum */}
       <div className="border-l-4 border-gray-400 pl-6 py-4 pb-8">
         <h3 className="text-primary mb-3">2007-2015</h3>
-        <h2 className="text-2xl font-extrabold md:text-4xl">Job Experince</h2>
+        <h2 className="font-extrabold text-4xl">Job Experince</h2>
         {/* main contents */}
         <div className="shadow-default rounded-xl mt-8 p-4 relative before:absolute before:w-6 before:h-6 before:bg-gray-200 before:rounded-full before:-left-9 before:top-14 before:border-[5px] before:border-gray-400 after:absolute after:w-3 after:h-2 after:bg-gray-400 after:-left-3 after:top-16">
           <div className="space-y-3">

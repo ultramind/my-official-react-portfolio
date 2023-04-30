@@ -23,7 +23,7 @@ const Resume = () => {
         <h3 className="text-primary text-2xl">7+ YEARS OF EXPERIENCE</h3>
         <h1 className="font-bold text-6xl">My Resume</h1>
       </div>
-      <div className="cardContainer space-y-14 mt-10 p-0">
+      <div className="cardContainer space-y-0 mt-10 p-0">
         {/* card item */}
         <div className="tab_btn_container flex justify-center space-x-4 md:space-x-14">
           <button

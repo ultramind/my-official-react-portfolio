@@ -28,7 +28,7 @@ const Testimonial = () => {
   };
   // console.log(data);
   return (
-    <div className="p-4 my-20 md:px-[20%] ">
+    <div className="p-4 my-20 md:px-12 lg:px-36 ">
       <div className="title text-center space-y-3 mb-16" data-aos="fade-up">
         <h3 className="text-primary">WHAT CLIENTS SAY</h3>
         <h1 className="text-5xl font-bold md:text-6xl">Testimonial</h1>

@@ -12,18 +12,18 @@ const Services = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="p-2 my-20">
+    <div className="p-2 my-20 md:p-6 lg:px-16">
       <div
         className="title text-center space-y-3 md:text-left"
         data-aos="fade-up"
       >
-        <h3 className="text-primary md:text-3xl">Features</h3>
+        <h3 className="text-primary text-3xl">Features</h3>
         <h1 className="text-5xl font-bold md:text-6xl">What i Do</h1>
       </div>
-      <div className="cardContainer space-y-8 mt-20 p-2 flex flex-wrap gap-12 md:bg-red-500 lg:bg-green-400 md:space-y-0">
+      <div className="cardContainer space-y-8 py-8 md:flex md:space-y-0 md:flex-wrap md:gap-10">
         {/* card item */}
         <div
-          className="py-8 w-[30%] px-4 shadow-default rounded-xl"
+          className="py-8 md:w-[30%] md:grow px-4 shadow-default rounded-xl"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -39,7 +39,7 @@ const Services = () => {
           </div>
         </div>
         <div
-          className="py-8 w-[30%] px-4 shadow-default rounded-xl"
+          className="py-8 md:w-[30%] md:grow px-4 shadow-default rounded-xl"
           data-aos="fade-up"
           data-aos-duration="1600"
         >
@@ -55,7 +55,7 @@ const Services = () => {
           </div>
         </div>
         <div
-          className="py-8 w-[30%] px-4 shadow-default rounded-xl"
+          className="py-8 md:w-[30%] md:grow px-4 shadow-default rounded-xl"
           data-aos="fade-up"
           data-aos-duration="1600"
         >
@@ -71,7 +71,7 @@ const Services = () => {
           </div>
         </div>
         <div
-          className="py-8 w-[30%] px-4 shadow-default rounded-xl"
+          className="py-8 md:w-[30%] md:shrink px-4 shadow-default rounded-xl"
           data-aos="fade-up"
           data-aos-duration="1600"
         >

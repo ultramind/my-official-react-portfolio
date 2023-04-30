@@ -55,7 +55,7 @@ const Testimony = ({ propData }) => {
               </div>
             </div>
           </div>
-          <p className="leading-42 text-xl">{body}</p>
+          <p className="">{body}</p>
         </div>
       </div>
     </div>

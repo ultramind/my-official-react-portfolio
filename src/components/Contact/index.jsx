@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import img from "../../assets/images/portfolio/portfolio-1.png";
 import {
   BsArrowLeftCircle,
@@ -10,10 +10,15 @@ import { GrLinkNext } from "react-icons/gr";
 import { SlSocialFacebook } from "react-icons/sl";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { TbBrandGithub, TbBrandTwitter } from "react-icons/tb";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <div className="p-4 md:px-[15%] mt-20 mb-16">
+    <div className="p-4 md:px-8 mt-20 mb-16 lg:px-24">
       <div className="title text-center space-y-3">
         <h3 className="text-primary text-2xl">Contact</h3>
         <h1 className="text-4xl font-bold md:text-6xl">Contact With Me</h1>

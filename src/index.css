@@ -5,8 +5,8 @@
 
 @layer {
   body {
-    /* .background-color: #dde1e7; */
-    background-color: #ecf0f3;
+    background-color: #dde1e7;
+    /* background-color: #ecf0f3; */
     color: #2f3338;
     font-family: "Rancho", cursive;
   }

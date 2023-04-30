@@ -18,7 +18,7 @@ const Header = () => {
       <div
         className={
           navEffect == true
-            ? "hidden md:block mx-auto border-b-2 border-gray-300 sticky top-0 left-0 right-0 shadow-lg md:bg-[#ECF0F3] z-10 ease-in-out duration-300"
+            ? "hidden md:block mx-auto border-b-2 border-gray-300 sticky top-0 left-0 right-0 shadow-lg md:bg-[#dde1e7] z-10 ease-in-out duration-300"
             : "hidden md:block relative top-0 left-0 right-0 mx-auto border-b-2 border-gray-300 md:bg-transparent z-10 ease-in-out duration-300"
         }
       >

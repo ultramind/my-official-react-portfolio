@@ -37,7 +37,7 @@ const MobileHeadeer = () => {
         <div className="w-10 h-10 bg-gray-800 rounded-full overflow-hidden">
           <img src={img} alt="" />
         </div>
-        <h1 className="text-2xl font-bold">AKAGOD</h1>
+        <h1 className="text-2xl font-bold">Akachukwu</h1>
       </div>
       <AiOutlineAlignRight
         className="text-primary text-3xl font-bold"

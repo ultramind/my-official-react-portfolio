@@ -16,21 +16,21 @@ const Hero = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="flex flex-col-reverse p-4 justify-between items-center py-4 mt-10 mx-auto lg:px-8 md:mt-0 md:h-screen md:flex-row md:items-starts md:px-[10%] md:py-24">
+    <div className="flex flex-col-reverse py- px-4 space-y-8 pt-20 md:pt-10 md:px-12 md:flex-row md:items-center md:space-y-0 lg:items-center lg:px-36 lg:pt-8 lg:h-screen">
       {/* Hero left content */}
       <div className="left space-y-6 md:w-[85%] md:py-0 md:pr-16 md:space-y-10">
         <h3 className="text-primary">WELCOME TO MY WORLD</h3>
         <h1 className="text-5xl font-bold md:text-6xl" data-aos="fade-up">
           Hi, I’m Akachukwu <br />a Developer.
         </h1>
-        <p className="lg:w-full md:w-[80%]">
-          Highly skilled FullStack Developer with [Number of Years] years of
-          experience in developing robust and scalable web applications.
-          Proficient in multiple programming languages, frameworks, and
-          technologies, including [List of Technologies].
+        <p className="" data-aos="fade-up">
+          Highly skilled FullStack Developer with 5 years of experience in
+          developing robust and scalable web applications. Proficient in
+          multiple programming languages, frameworks, and technologies,
+          including HTML, CSS3, JavaScript, Php, React Js.
         </p>
         {/* CTA buttons */}
-        <div className="flex flex-col space-y-10 lg:flex-col lg:items-start lg:space-y-6 md:flex-row md:items-center md:justify-between md:space-y-0">
+        <div className="flex flex-col space-y-10 md:flex-col md:items-start md:justify-between md:space-y-6 lg:flex-row lg:items-center lg:space-y-0">
           {/* socials */}
           <div className="md:flex-col ">
             <h3 className="font-bold text-2xl">Find me with</h3>
@@ -104,7 +104,7 @@ const Hero = () => {
       {/* hero image */}
       <div className="right md:w-[50%]" data-aos="fade-left">
         <div className="img-container p-6 box mb-8">
-          <img src={img} alt="" className="w-[100%] md:-mt-36" />
+          <img src={img} alt="" className="w-[100%] -mt-24" />
         </div>
       </div>
     </div>

@@ -10,18 +10,32 @@ import {
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Hero = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  const [text] = useTypewriter({
+    words: ["Frontend Developer", "Backend Developer"],
+    loop: {},
+  });
+
   return (
-    <div id="home" className="flex flex-col-reverse mb-24 px-4 space-y-8 pt-20 md:pt-10 md:px-12 md:flex-row md:items-center md:space-y-0 lg:items-center lg:px-36 lg:pt-8 lg:h-screen">
+    <div
+      id="home"
+      className="flex flex-col-reverse mb-24 px-4 space-y-8 pt-20 md:pt-10 md:px-12 md:flex-row md:items-center md:space-y-0 lg:items-center lg:px-36 lg:pt-8 lg:h-screen"
+    >
       {/* Hero left content */}
       <div className="left space-y-6 md:w-[85%] md:py-0 md:pr-16 md:space-y-10">
-        <h3 className="text-primary">WELCOME TO MY WORLD</h3>
+        <h3 className="text-primary text-xl">WELCOME TO MY WORLD</h3>
         <h1 className="text-5xl font-bold md:text-6xl" data-aos="fade-up">
-          Hi, I’m Akachukwu <br />a Developer.
+          Hi, I’m Akachukwu <br /> a{" "}
+          <span className="text-primary inline-block mt-4">
+            {text}
+            <Cursor />{" "}
+          </span>
         </h1>
         <p className="" data-aos="fade-up">
           Highly skilled FullStack Developer with 5 years of experience in

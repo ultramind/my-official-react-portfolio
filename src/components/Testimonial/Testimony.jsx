@@ -7,6 +7,7 @@ import {
 import { IoMdQuote } from "react-icons/io";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const Testimony = ({ propData, theme }) => {
   const { img, author, title, project, date, body } = propData;
@@ -15,7 +16,7 @@ const Testimony = ({ propData, theme }) => {
   }, []);
   return (
     <div
-      className="flex flex-col space-y-6 md:flex-row md:justify-between md:gap-8"
+      className="flex flex-col p-6 mb-4 space-y-2 md:p-6 md:flex-row md:justify-between md:gap-8"
       data-aos="fade-up"
     >
       <div
@@ -27,26 +28,19 @@ const Testimony = ({ propData, theme }) => {
           <div>
             <img src={img} className="w-[100%] rounded-lg" alt="" />
           </div>
-          <h2 className="text-3xl font-bold">{author}</h2>
-          <h2 className="text-primary text-xl">{title}</h2>
+          <h2 className="text-4xl font-bold">{author}</h2>
+          <h2 className="text-primary text-2xl">{title}</h2>
         </div>
       </div>
-      <div class="rounded-xl md:flex-[60%]">
-        <div className="hidden md:block md:flex md:justify-between md:items-center">
-          <IoMdQuote className="text-8xl" />
-          <div className="flex md:gap-6">
-            <button className="py-4 rounded text-2xl px-8 shadow-default text-primary">
-              <AiOutlineArrowLeft />
-            </button>
-            <button className="py-4 rounded text-2xl px-8 shadow-default text-primary">
-              <AiOutlineArrowRight />
-            </button>
-          </div>
+      <div class="rounded-xl space-y-12 text-left md:flex-[55%]">
+        <div className="hidden md:flex md:justify-between md:items-center lg:items-start">
+          <FaQuoteLeft className="text-8xl" />
+          <FaQuoteRight className="text-8xl" />
         </div>
         <div
           className={`${
-            theme === "dark" ? "dark-theme-shadow-effect" : "shadow-demand"
-          } p-6 rounded-lg space-y-8`}
+            theme == "dark" ? "dark-theme-shadow-effect" : "shadow-demand"
+          } p-6 rounded-lg space-y-4 shadow-default`}
         >
           <div className=" rounded-lg flex flex-col space-y-4 md:flex-row md:justify-between md:items-center md:border-b-2 md:border-gray-400 md:pb-6">
             <div className="title space-y-4">

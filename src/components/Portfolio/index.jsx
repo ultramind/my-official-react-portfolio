@@ -25,7 +25,7 @@ const Portfolio = ({ theme }) => {
         <div
           className={`p-4 ${
             theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
-          }  rounded-lg md:w-[30%] md:shrink md:grow`}
+          }  rounded-lg md:w-[25%] md:shrink md:grow lg:w-[25%]`}
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -46,7 +46,7 @@ const Portfolio = ({ theme }) => {
         <div
           className={`p-4 ${
             theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
-          }  rounded-lg md:w-[30%] md:shrink md:grow`}
+          }  rounded-lg md:w-[25%] md:shrink md:grow lg:w-[25%]`}
           data-aos="fade-up"
           data-aos-duration="1200"
         >
@@ -67,7 +67,7 @@ const Portfolio = ({ theme }) => {
         <div
           className={`p-4 ${
             theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
-          }  rounded-lg md:w-[30%] md:shrink md:grow`}
+          }  rounded-lg md:w-[25%] md:shrink md:grow lg:w-[25%]`}
           data-aos="fade-up"
           data-aos-duration="1400"
         >
@@ -88,7 +88,7 @@ const Portfolio = ({ theme }) => {
         <div
           className={`p-4 ${
             theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
-          }  rounded-lg md:w-[30%] md:shrink md:grow`}
+          }  rounded-lg md:w-[25%] md:shrink md:grow lg:w-[25%]`}
           data-aos="fade-up"
           data-aos-duration="1600"
         >
@@ -109,7 +109,7 @@ const Portfolio = ({ theme }) => {
         <div
           className={`p-4 ${
             theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
-          }  rounded-lg md:w-[30%] md:shrink md:grow`}
+          }  rounded-lg md:w-[25%] md:shrink md:grow lg:w-[25%]`}
           data-aos="fade-up"
           data-aos-duration="1800"
         >
@@ -130,7 +130,7 @@ const Portfolio = ({ theme }) => {
         <div
           className={`p-4 ${
             theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
-          }  rounded-lg md:w-[30%] md:shrink md:grow`}
+          }  rounded-lg md:w-[25%] md:shrink md:grow lg:w-[25%]`}
         >
           <div
             class="card flex-col space-y-6"

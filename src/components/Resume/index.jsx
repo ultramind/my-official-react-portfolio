@@ -6,7 +6,7 @@ import Professional from "./Professional";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Resume = () => {
+const Resume = ({ theme }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -32,8 +32,16 @@ const Resume = () => {
           <button
             className={
               toggleState == 1
-                ? "rounded py-2 px-4 shadow-default text-primary"
-                : "rounded py-2 px-4 shadow-default"
+                ? `rounded py-2 px-4 ${
+                    theme === "dark"
+                      ? "dark-theme-shadow-effect"
+                      : "shadow-default"
+                  } text-primary text-2xl`
+                : `rounded py-2 px-4 ${
+                    theme === "dark"
+                      ? "dark-theme-shadow-effect"
+                      : "shadow-default"
+                  } text-2xl`
             }
             onClick={() => toggle(1)}
           >
@@ -42,8 +50,16 @@ const Resume = () => {
           <button
             className={
               toggleState == 2
-                ? "rounded py-2 px-4 shadow-default text-primary"
-                : "rounded py-2 px-4 shadow-default"
+                ? `rounded py-2 px-4 ${
+                    theme === "dark"
+                      ? "dark-theme-shadow-effect"
+                      : "shadow-default"
+                  } text-primary text-2xl`
+                : `rounded py-2 px-4 ${
+                    theme === "dark"
+                      ? "dark-theme-shadow-effect"
+                      : "shadow-default"
+                  } text-2xl`
             }
             onClick={() => toggle(2)}
           >
@@ -51,7 +67,7 @@ const Resume = () => {
           </button>
         </div>
         {/* First Content */}
-        <Education toggleState={toggleState} />
+        <Education theme={theme} toggleState={toggleState} />
         {/* Second Content */}
         <Professional toggleState={toggleState} />
       </div>

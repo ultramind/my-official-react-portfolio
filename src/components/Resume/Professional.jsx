@@ -1,6 +1,6 @@
 import React from "react";
 
-const Professional = ({ toggleState }) => {
+const Professional = ({ toggleState}) => {
   return (
     <div
       className={
@@ -11,7 +11,7 @@ const Professional = ({ toggleState }) => {
     >
       <div className="p-2 basis-[45%]">
         <h3 className="text-primary mb-3">2007-2015</h3>
-        <h2 className="text-3xl font-extrabold mb-8">Frontend Development</h2>
+        <h2 className="text-4xl font-extrabold mb-8">Frontend Development</h2>
         {/* main contents */}
         <div className="mb-6">
           <h2 className="text-lg">PHOTOSHOP</h2>
@@ -41,7 +41,7 @@ const Professional = ({ toggleState }) => {
       {/* second colum */}
       <div className="border-l-4 basis-[50%] pl-6 py-4 pb-8 md:py-2 md:border-none">
         <h3 className="text-primary mb-3">2007-2015</h3>
-        <h2 className="text-3xl font-extrabold mb-8">Backend Development</h2>
+        <h2 className="text-4xl font-extrabold mb-8">Backend Development</h2>
         {/* main contents */}
         <div className="mb-6">
           <h2 className="text-lg">PHP</h2>

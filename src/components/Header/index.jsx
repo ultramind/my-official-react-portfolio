@@ -10,7 +10,6 @@ const Header = ({ theme, changeTheme }) => {
   const activateStickyNav = () => {
     if (window.scrollY >= 150) {
       setNavEffect(true);
-      console.log(navEffect);
     } else {
       setNavEffect(false);
     }

@@ -11,7 +11,7 @@ import Slider from "react-slick";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Testimonial = () => {
+const Testimonial = ({ theme }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -35,7 +35,7 @@ const Testimonial = () => {
       </div>
       <div className="flex flex-col mt-16 space-y-8 md:flex-row md:justify-between md:gap-16 md:mt-8 md:flex-wrap">
         {data.map((testimony, index) => {
-          return <Testimony key={index} propData={testimony} />;
+          return <Testimony key={index} theme={theme} propData={testimony} />;
         })}
       </div>
     </div>

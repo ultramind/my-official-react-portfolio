@@ -1,6 +1,6 @@
 import React from "react";
 
-const Education = ({ toggleState }) => {
+const Education = ({ toggleState, theme }) => {
   return (
     <div
       className={
@@ -13,7 +13,11 @@ const Education = ({ toggleState }) => {
         <h3 className="text-primary mb-3 text-xl">2007-2015</h3>
         <h2 className="font-extrabold text-4xl">Education Qualifications</h2>
         {/* main contents */}
-        <div className="shadow-default rounded-xl mt-8 p-4 relative before:absolute before:w-6 before:h-6 before:bg-gray-200 before:rounded-full before:-left-9 before:top-14 before:border-[5px] before:border-gray-400 after:absolute after:w-3 after:h-2 after:bg-gray-400 after:-left-3 after:top-16">
+        <div
+          className={`shadow-default ${
+            theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          } rounded-xl mt-8 p-4 relative before:absolute before:w-6 before:h-6 before:bg-gray-200 before:rounded-full before:-left-9 before:top-14 before:border-[5px] before:border-gray-400 after:absolute after:w-3 after:h-2 after:bg-gray-400 after:-left-3 after:top-16`}
+        >
           <div className="space-y-3">
             <div className="header">
               <h2 className="text-2xl font-semibold">
@@ -23,7 +27,11 @@ const Education = ({ toggleState }) => {
                 Enugu State University of Science and Technology (ESUT)
               </h4>
             </div>
-            <h3 className="shadow-default w-20 text-center font-semibold text-primary rounded py-2 text-lg">
+            <h3
+              className={`${
+                theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+              } w-20 text-center font-semibold text-primary rounded py-2 text-lg`}
+            >
               4.50/5
             </h3>
           </div>
@@ -34,7 +42,11 @@ const Education = ({ toggleState }) => {
             in, lobortis mauris hendrerit ante.
           </p>
         </div>
-        <div className="shadow-default rounded-xl mt-8 p-4 relative before:absolute before:w-6 before:h-6 before:bg-gray-200 before:rounded-full before:-left-9 before:top-14 before:border-[5px] before:border-gray-400 after:absolute after:w-3 after:h-2 after:bg-gray-400 after:-left-3 after:top-16">
+        <div
+          className={`shadow-default ${
+            theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          } rounded-xl mt-8 p-4 relative before:absolute before:w-6 before:h-6 before:bg-gray-200 before:rounded-full before:-left-9 before:top-14 before:border-[5px] before:border-gray-400 after:absolute after:w-3 after:h-2 after:bg-gray-400 after:-left-3 after:top-16`}
+        >
           <div className="space-y-3">
             <div className="header">
               <h2 className="text-2xl font-semibold">
@@ -44,7 +56,11 @@ const Education = ({ toggleState }) => {
                 Bethel Secondary School Uwani Enugu (BSSH)
               </h4>
             </div>
-            <h3 className="shadow-default w-20 text-center font-semibold text-primary rounded py-2 text-lg">
+            <h3
+              className={`${
+                theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+              } w-20 text-center font-semibold text-primary rounded py-2 text-lg`}
+            >
               4.50/5
             </h3>
           </div>
@@ -62,7 +78,11 @@ const Education = ({ toggleState }) => {
         <h3 className="text-primary mb-3">2007-2015</h3>
         <h2 className="font-extrabold text-4xl">Job Experince</h2>
         {/* main contents */}
-        <div className="shadow-default rounded-xl mt-8 p-4 relative before:absolute before:w-6 before:h-6 before:bg-gray-200 before:rounded-full before:-left-9 before:top-14 before:border-[5px] before:border-gray-400 after:absolute after:w-3 after:h-2 after:bg-gray-400 after:-left-3 after:top-16">
+        <div
+          className={`shadow-default ${
+            theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          } rounded-xl mt-8 p-4 relative before:absolute before:w-6 before:h-6 before:bg-gray-200 before:rounded-full before:-left-9 before:top-14 before:border-[5px] before:border-gray-400 after:absolute after:w-3 after:h-2 after:bg-gray-400 after:-left-3 after:top-16`}
+        >
           <div className="space-y-3">
             <div className="header">
               <h2 className="text-2xl font-semibold">
@@ -72,7 +92,11 @@ const Education = ({ toggleState }) => {
                 Bethel Secondary School Uwani Enugu (BSSH)
               </h4>
             </div>
-            <h3 className="shadow-default w-20 text-center font-semibold text-primary rounded py-2 text-lg">
+            <h3
+              className={`${
+                theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+              } w-20 text-center font-semibold text-primary rounded py-2 text-lg`}
+            >
               4.50/5
             </h3>
           </div>
@@ -83,7 +107,11 @@ const Education = ({ toggleState }) => {
             in, lobortis mauris hendrerit ante.
           </p>
         </div>
-        <div className="shadow-default rounded-xl mt-8 p-4 relative before:absolute before:w-6 before:h-6 before:bg-gray-200 before:rounded-full before:-left-9 before:top-14 before:border-[5px] before:border-gray-400 after:absolute after:w-3 after:h-2 after:bg-gray-400 after:-left-3 after:top-16">
+        <div
+          className={`shadow-default ${
+            theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          } rounded-xl mt-8 p-4 relative before:absolute before:w-6 before:h-6 before:bg-gray-200 before:rounded-full before:-left-9 before:top-14 before:border-[5px] before:border-gray-400 after:absolute after:w-3 after:h-2 after:bg-gray-400 after:-left-3 after:top-16`}
+        >
           <div className="space-y-3">
             <div className="header">
               <h2 className="text-2xl font-semibold">
@@ -93,7 +121,11 @@ const Education = ({ toggleState }) => {
                 Bethel Secondary School Uwani Enugu (BSSH)
               </h4>
             </div>
-            <h3 className="shadow-default w-20 text-center font-semibold text-primary rounded py-2 text-lg">
+            <h3
+              className={`${
+                theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+              } w-20 text-center font-semibold text-primary rounded py-2 text-lg`}
+            >
               4.50/5
             </h3>
           </div>

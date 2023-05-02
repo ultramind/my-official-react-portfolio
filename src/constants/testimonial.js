@@ -1,6 +1,5 @@
 import img1 from "../assets/images/author/author-1.png";
-import img2 from "../assets/images/author/author-2.png";
-import img3 from "../assets/images/author/author-3.png";
+import img2 from "../assets/images/author/author-3.png";
 
 export default [
   {

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import img from "../../assets/images/icon-1.png";
 import { FaHamburger } from "react-icons/fa";
 import { MdOutlineWeb } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";

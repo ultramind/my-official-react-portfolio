@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
 import img from "../../assets/images/portfolio/portfolio-1.png";
-import {
-  BsArrowLeftCircle,
-  BsArrowRightCircle,
-  BsFillArrowLeftCircleFill,
-  BsFillArrowRightCircleFill,
-} from "react-icons/bs";
+
 import { GrLinkNext } from "react-icons/gr";
-import { SlSocialFacebook } from "react-icons/sl";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { TbBrandGithub, TbBrandTwitter } from "react-icons/tb";
 import Aos from "aos";

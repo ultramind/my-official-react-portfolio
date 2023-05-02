@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-// import img from "https://inbio-react.netlify.app/static/5930a183f9be0c913e9d25b1318416f9/3a710/contact1.webp";
+import img from "../../assets/images/portfolio/portfolio-1.png";
 
 import { GrLinkNext } from "react-icons/gr";
+import { SlSocialFacebook } from "react-icons/sl";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { TbBrandGithub, TbBrandTwitter } from "react-icons/tb";
 import Aos from "aos";
@@ -25,9 +26,9 @@ const Contact = ({ theme }) => {
           data-aos="fade-up"
         >
           <div class="card flex-col space-y-4">
-            {/* <div>
+            <div>
               <img src={img} className="w-[100%] rounded-lg" alt="" />
-            </div> */}
+            </div>
             <h2 className="text-3xl font-bold">Nevine Acotanza</h2>
             <h2 className="text-primary text-xl">Chief Operating Officer</h2>
           </div>

@@ -91,6 +91,16 @@ const Header = ({ theme, changeTheme }) => {
               Resume
             </Link>
             <Link
+              to="testimonies"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="ml-10 text-2xl cursor-pointer"
+            >
+              Testimony
+            </Link>
+            <Link
               to="contact"
               spy={true}
               smooth={true}

@@ -98,7 +98,7 @@ function App() {
           navEffect &&
           `p-4 ${
             theme === "dark" ? "dark-theme-shadow-effect" : "shadow-default"
-          } rounded-full text-primary font-bold text-2xl fixed right-4 bottom-8 z-10 ease-in-out duration-300`
+          } cursor-pointer rounded-full text-primary font-bold text-2xl fixed right-4 bottom-8 z-10 ease-in-out duration-300`
         }
       >
         <AiOutlineArrowUp />

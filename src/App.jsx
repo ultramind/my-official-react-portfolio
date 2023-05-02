@@ -15,6 +15,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 function App() {
+  const [theme, setTheme] = useState("light");
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -29,21 +30,37 @@ function App() {
 
   addEventListener("scroll", onscrollEffect);
 
+  // Theme setting
+  // theme settings
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+      console.log("Dark theme");
+    } else {
+      document.documentElement.classList.remove("dark");
+      console.log("Light theme");
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = () => {
+    setTheme(theme == "dark" ? "light" : "dark");
+  };
+
   return (
-    <div className="relative">
-      <Header />
+    <div className="relative dark:bg-[#212428] dark:text-[#d5d7da]">
+      <Header theme={theme} changeTheme={handleThemeSwitch} />
       <MobileHeadeer />
-      <Hero />
+      <Hero theme={theme} />
       <hr className="w-[100%] border-2 border-gray-300" />
-      <Services />
+      <Services theme={theme} />
       <hr className="w-[100%] border-2 border-gray-300" />
-      <Portfolio />
+      <Portfolio theme={theme} />
       <hr className="w-[100%] border-2 border-gray-300" />
-      <Resume />
+      <Resume theme={theme} />
       <hr className="w-[100%] border-2 border-gray-300" />
-      <Testimonial />
+      <Testimonial theme={theme} />
       <hr className="w-[100%] border-2 border-gray-300" />
-      <Contact />
+      <Contact theme={theme} />
       <hr className="w-[100%] border-2 border-gray-300" />
       <Footer />
       <a

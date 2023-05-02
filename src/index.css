@@ -23,8 +23,13 @@
   }
 
   .shadow-default {
-    background: linear-gradient(45deg, #dde1e7, #dcdedf);
-    box-shadow: -5px -3px 5px #ffffff73, 3px 3px 10px rgba(94, 104, 121, 0.288);
+    background: linear-gradient(45deg, #dde1e7, #d3d7da);
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 7px rgba(18, 18, 19, 0.288);
+  }
+
+  .dark-theme-shadow-effect {
+    background: linear-gradient(135deg, #212428, #1e2024);
+    box-shadow: -5px -5px 10px #8c8c8c1d, 5px 5px 10px rgba(0, 0, 0, 0.288);
   }
 
   .inner-shadow {
@@ -52,5 +57,26 @@
     box-shadow: inset -5px -5px 5px #ffffff73,
       inset 3px 3px 10px rgba(77, 80, 85, 0.288);
     background: linear-gradient(-90deg, #dde1e7, #d3d4d5);
+  }
+
+  .box-dark {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 5px #1a1a1a73, 5px 5px 7px rgba(20, 29, 38, 0.288);
+    background: linear-gradient(-90deg, #1a1a1a73, #212428);
+    z-index: 1;
+  }
+
+  .box-dark::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 94%;
+    height: 94%;
+    box-shadow: inset -5px -5px 5px #07060673,
+      inset 5px 5px 10px rgba(12, 12, 12, 0.288);
+    background: linear-gradient(-145deg, #212428, #212428);
   }
 }

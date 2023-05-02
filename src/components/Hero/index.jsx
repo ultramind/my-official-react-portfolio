@@ -12,11 +12,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
-const Hero = () => {
+const Hero = ({ theme }) => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
+  // react-simple-typewriter effect connfig
   const [text] = useTypewriter({
     words: ["Frontend Developer", "Backend Developer"],
     loop: {},
@@ -38,10 +39,11 @@ const Hero = () => {
           </span>
         </h1>
         <p className="" data-aos="fade-up">
-          Highly skilled FullStack Developer with 5 years of experience in
-          developing robust and scalable web applications. Proficient in
-          multiple programming languages, frameworks, and technologies,
-          including HTML, CSS3, JavaScript, Php, React Js.
+          As a Full Stack Developer, I have experience building responsive and
+          dynamic web applications using HTML, CSS, JavaScript, ReactJS, Node,
+          MongoDB, MySQL, PHP, and Tailwind CSS. With strong problem-solving and
+          communication skills, I am able to work effectively in a team
+          environment and deliver projects within tight deadlines.
         </p>
         {/* CTA buttons */}
         <div className="flex flex-col space-y-10 md:flex-col md:items-start md:justify-between md:space-y-6 lg:flex-row lg:items-center lg:space-y-0">
@@ -51,7 +53,11 @@ const Hero = () => {
             <div className="mt-6 space-x-4">
               <a
                 href="#"
-                className="p-4 shadow-default inline-block"
+                className={`p-4 ${
+                  theme !== "dark"
+                    ? "shadow-default"
+                    : "dark-theme-shadow-effect"
+                } inline-block`}
                 data-aos="fade-right"
                 data-aos-duration="1600"
               >
@@ -59,7 +65,11 @@ const Hero = () => {
               </a>
               <a
                 href="#"
-                className="p-4 shadow-default inline-block"
+                className={`p-4 ${
+                  theme !== "dark"
+                    ? "shadow-default"
+                    : "dark-theme-shadow-effect"
+                } inline-block`}
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
@@ -67,7 +77,11 @@ const Hero = () => {
               </a>
               <a
                 href="#"
-                className="p-4 shadow-default inline-block"
+                className={`p-4 ${
+                  theme !== "dark"
+                    ? "shadow-default"
+                    : "dark-theme-shadow-effect"
+                } inline-block`}
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
@@ -75,7 +89,11 @@ const Hero = () => {
               </a>
               <a
                 href="#"
-                className="p-4 shadow-default inline-block"
+                className={`p-4 ${
+                  theme !== "dark"
+                    ? "shadow-default"
+                    : "dark-theme-shadow-effect"
+                } inline-block`}
                 data-aos="fade-right"
                 data-aos-duration="700"
               >
@@ -89,7 +107,11 @@ const Hero = () => {
             <div className="mt-6 space-x-4">
               <a
                 href="#"
-                className="p-4 shadow-default inline-block"
+                className={`p-4 ${
+                  theme !== "dark"
+                    ? "shadow-default"
+                    : "dark-theme-shadow-effect"
+                } inline-block`}
                 data-aos="fade-right"
                 data-aos-duration="1300"
               >
@@ -97,7 +119,11 @@ const Hero = () => {
               </a>
               <a
                 href="#"
-                className="p-4 shadow-default inline-block"
+                className={`p-4 ${
+                  theme !== "dark"
+                    ? "shadow-default"
+                    : "dark-theme-shadow-effect"
+                } inline-block`}
                 data-aos="fade-right"
                 data-aos-duration="1000"
               >
@@ -105,7 +131,11 @@ const Hero = () => {
               </a>
               <a
                 href="#"
-                className="p-4 shadow-default inline-block"
+                className={`p-4 ${
+                  theme !== "dark"
+                    ? "shadow-default"
+                    : "dark-theme-shadow-effect"
+                } inline-block`}
                 data-aos="fade-right"
                 data-aos-duration="700"
               >
@@ -117,7 +147,11 @@ const Hero = () => {
       </div>
       {/* hero image */}
       <div className="right md:w-[50%]" data-aos="fade-left">
-        <div className="img-container p-6 box mb-8">
+        <div
+          className={`img-container p-6 ${
+            theme === "dark" ? "box-dark" : "box"
+          } mb-8`}
+        >
           <img src={img} alt="" className="w-[100%] -mt-24" />
         </div>
       </div>

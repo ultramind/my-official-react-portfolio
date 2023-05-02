@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
 import img from "../../assets/images/author/footer-img.png";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 import { TbBrandGithub, TbBrandTwitter } from "react-icons/tb";
 import "./style.css";
 import { Link } from "react-scroll";
+import { CiDark } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
 
 const MobileHeadeer = () => {
   const [toggle, setToggle] = useState(false);
   const [navEffect, setNavEffect] = useState(false);
+  const [theme, setTheme] = useState("light");
+
   const activateStickyNav = () => {
     if (window.scrollY >= 150) {
       setNavEffect(true);
@@ -20,11 +24,24 @@ const MobileHeadeer = () => {
   // adding the eventListner
   addEventListener("scroll", activateStickyNav);
 
-  // handle toggle8162140131
-
+  // handle toggle
   const handleToggle = () => {
     setToggle(!toggle);
   };
+
+  // theme settings
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = () => {
+    setTheme(theme == "dark" ? "light" : "dark");
+  };
+
   return (
     <div
       className={
@@ -60,6 +77,9 @@ const MobileHeadeer = () => {
             </div>
             <h1 className=" block text-2xl font-bold">Akachukwu</h1>
           </div>
+          <button className="text-3xl ml-8" onClick={handleThemeSwitch}>
+            {theme === "dark" ? <CiDark /> : <MdDarkMode />}
+          </button>
           <AiOutlineClose
             className="text-primary font-bold p-2 items-center rounded-full shadow-default"
             size={40}

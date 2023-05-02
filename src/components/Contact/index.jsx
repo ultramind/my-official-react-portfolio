@@ -19,12 +19,15 @@ const Contact = () => {
   }, []);
   return (
     <div id="contact" className="p-4 md:px-8 mt-20 mb-16 lg:px-24">
-      <div className="title text-center space-y-3">
+      <div className="title text-center space-y-3" data-aos="fade-up">
         <h3 className="text-primary text-2xl">Contact</h3>
         <h1 className="text-4xl font-bold md:text-6xl">Contact With Me</h1>
       </div>
       <div className="space-y-12 md:flex mt-16 md:gap-12 md:space-y-0">
-        <div className="p-6 space-y-4 shadow-default rounded-lg md:flex-[30%] ">
+        <div
+          className="p-6 space-y-4 shadow-default rounded-lg md:flex-[30%]"
+          data-aos="fade-up"
+        >
           <div class="card flex-col space-y-4">
             <div>
               <img src={img} className="w-[100%] rounded-lg" alt="" />
@@ -59,7 +62,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div class="card shadow-default flex-col p-8 space-y-6 rounded-xl md:flex-[60%]">
+        <div
+          class="card shadow-default flex-col p-8 space-y-6 rounded-xl md:flex-[60%]"
+          data-aos="fade-up"
+        >
           <form class="items-center space-y-4">
             <label class="block">
               <span class="block text-sm font-medium text-slate-700">

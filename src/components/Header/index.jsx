@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import img from "../../assets/images/author/footer-img.png";
 import { Link } from "react-scroll";
+import { MdDarkMode } from "react-icons/md";
+import { CiDark } from "react-icons/ci";
 
-const Header = () => {
+const Header = ({ theme, changeTheme }) => {
   const [navEffect, setNavEffect] = useState(false);
+
   const activateStickyNav = () => {
     if (window.scrollY >= 150) {
       setNavEffect(true);
+      console.log(navEffect);
     } else {
       setNavEffect(false);
     }
@@ -14,25 +18,26 @@ const Header = () => {
 
   // adding the eventListner
   addEventListener("scroll", activateStickyNav);
-  const handleSetActive = (to) => {
-    console.log(to);
-  };
+
   return (
     <>
       <div
         className={
           navEffect == true
-            ? "hidden md:block mx-auto border-b-2 border-gray-300 sticky top-0 left-0 right-0 shadow-lg md:bg-[#dde1e7] z-10 ease-in-out duration-300"
-            : "hidden md:block relative top-0 left-0 right-0 mx-auto border-b-2 border-gray-300 md:bg-transparent z-10 ease-in-out duration-300"
+            ? "hidden md:block sticky top-0 left-0 right-0 shadow-lg md:bg-[#dde1e7] dark:bg-[#212428] dark:shadow-gray-900 dark:border-gray-500 z-10 ease-in-out duration-300"
+            : "hidden md:block relative top-0 left-0 right-0 mx-auto border-b-2 border-gray-300 md:bg-transparent dark:border-gray-600 z-10 ease-in-out duration-300"
         }
       >
-        <div className="header flex justify-between items-center px-24 py-2 md:px-12 lg:px-8">
+        <div className="header flex justify-between items-center px-24 py-2 md:px-24 lg:px-30">
           {/* logo */}
           <div className="logo flex justify-center items-center space-x-2">
             <div className="w-15 h-15 bg-gray-800 rounded-full overflow-hidden">
               <img src={img} alt="" />
             </div>
-            <h1 className="text-2xl font-bold">AKACHUKWU</h1>
+            <h1 className="text-4xl font-bold">Akachukwu</h1>
+            <button className="text-3xl ml-8" onClick={changeTheme}>
+              {theme === "dark" ? <CiDark /> : <MdDarkMode />}
+            </button>
           </div>
           {/* Links */}
           <div className="nav flex justify-between items-center">

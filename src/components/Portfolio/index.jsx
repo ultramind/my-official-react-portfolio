@@ -8,7 +8,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Portfolio = () => {
+const Portfolio = ({ theme }) => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -18,12 +18,14 @@ const Portfolio = () => {
         <h3 className="text-primary text-2xl">
           VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK
         </h3>
-        <h1 className="text-4xl font-bold md:text-6xl">My Portfolio</h1>
+        <h1 className="text-6xl font-bold">My Portfolio</h1>
       </div>
       <div className="cardContainer space-y-8 mt-10 p-2 md:space-y-0 md:flex md:flex-wrap md:gap-12">
         {/* card item */}
         <div
-          className="p-4 shadow-default rounded-lg md:w-[30%] md:shrink md:grow"
+          className={`p-4 ${
+            theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          }  rounded-lg md:w-[30%] md:shrink md:grow`}
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -32,17 +34,19 @@ const Portfolio = () => {
               <img src={img2} className="w-[100%] rounded-lg" alt="" />
             </div>
             <div className="cateory flex flex-row justify-between items-center font-medium">
-              <h3 className="text-primary">Development</h3>
+              <h3 className="text-primary text-3xl">Development</h3>
               <h3 className="flex flex-row justify-center items-center space-x-2">
-                <AiOutlineHeart className="text-primary text-lg" />{" "}
+                <AiOutlineHeart className="text-primary text-3xl" />{" "}
                 <span>898</span>
               </h3>
             </div>
-            <h2 className="text-2xl font-normal">Graphic Design</h2>
+            <h2 className="text-2xl font-normal text-4xl">Graphic Design</h2>
           </div>
         </div>
         <div
-          className="p-4 shadow-default rounded-lg md:w-[30%] md:shrink md:grow"
+          className={`p-4 ${
+            theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          }  rounded-lg md:w-[30%] md:shrink md:grow`}
           data-aos="fade-up"
           data-aos-duration="1200"
         >
@@ -51,17 +55,19 @@ const Portfolio = () => {
               <img src={img2} className="w-[100%] rounded-lg" alt="" />
             </div>
             <div className="cateory flex flex-row justify-between items-center font-medium">
-              <h3 className="text-primary">Development</h3>
+              <h3 className="text-primary text-3xl">Development</h3>
               <h3 className="flex flex-row justify-center items-center space-x-2">
-                <AiOutlineHeart className="text-primary text-lg" />{" "}
+                <AiOutlineHeart className="text-primary text-3xl" />{" "}
                 <span>898</span>
               </h3>
             </div>
-            <h2 className="text-2xl font-normal">Graphic Design</h2>
+            <h2 className="text-2xl font-normal text-4xl">Graphic Design</h2>
           </div>
         </div>
         <div
-          className="p-4 shadow-default rounded-lg md:w-[30%] md:shrink md:grow"
+          className={`p-4 ${
+            theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          }  rounded-lg md:w-[30%] md:shrink md:grow`}
           data-aos="fade-up"
           data-aos-duration="1400"
         >
@@ -70,17 +76,19 @@ const Portfolio = () => {
               <img src={img3} className="w-[100%] rounded-lg" alt="" />
             </div>
             <div className="cateory flex flex-row justify-between items-center font-medium">
-              <h3 className="text-primary">Development</h3>
+              <h3 className="text-primary text-3xl">Development</h3>
               <h3 className="flex flex-row justify-center items-center space-x-2">
-                <AiOutlineHeart className="text-primary text-lg" />{" "}
+                <AiOutlineHeart className="text-primary text-3xl" />{" "}
                 <span>898</span>
               </h3>
             </div>
-            <h2 className="text-2xl font-normal">Graphic Design</h2>
+            <h2 className="text-2xl font-normal text-4xl">Graphic Design</h2>
           </div>
         </div>
         <div
-          className="p-4 shadow-default rounded-lg md:w-[30%] md:shrink md:grow"
+          className={`p-4 ${
+            theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          }  rounded-lg md:w-[30%] md:shrink md:grow`}
           data-aos="fade-up"
           data-aos-duration="1600"
         >
@@ -89,17 +97,19 @@ const Portfolio = () => {
               <img src={img1} className="w-[100%] rounded-lg" alt="" />
             </div>
             <div className="cateory flex flex-row justify-between items-center font-medium">
-              <h3 className="text-primary">Development</h3>
+              <h3 className="text-primary text-3xl">Development</h3>
               <h3 className="flex flex-row justify-center items-center space-x-2">
-                <AiOutlineHeart className="text-primary text-lg" />{" "}
+                <AiOutlineHeart className="text-primary text-3xl" />{" "}
                 <span>898</span>
               </h3>
             </div>
-            <h2 className="text-2xl font-normal">Graphic Design</h2>
+            <h2 className="text-2xl font-normal text-4xl">Graphic Design</h2>
           </div>
         </div>
         <div
-          className="p-4 shadow-default rounded-lg md:w-[30%] md:shrink md:grow"
+          className={`p-4 ${
+            theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          }  rounded-lg md:w-[30%] md:shrink md:grow`}
           data-aos="fade-up"
           data-aos-duration="1800"
         >
@@ -108,16 +118,20 @@ const Portfolio = () => {
               <img src={img2} className="w-[100%] rounded-lg" alt="" />
             </div>
             <div className="cateory flex flex-row justify-between items-center font-medium">
-              <h3 className="text-primary">Development</h3>
+              <h3 className="text-primary text-3xl">Development</h3>
               <h3 className="flex flex-row justify-center items-center space-x-2">
-                <AiOutlineHeart className="text-primary text-lg" />{" "}
+                <AiOutlineHeart className="text-primary text-3xl" />{" "}
                 <span>898</span>
               </h3>
             </div>
-            <h2 className="text-2xl font-normal">Graphic Design</h2>
+            <h2 className="text-2xl font-normal text-4xl">Graphic Design</h2>
           </div>
         </div>
-        <div className="p-4 shadow-default rounded-lg md:w-[30%] md:shrink md:grow">
+        <div
+          className={`p-4 ${
+            theme == "dark" ? "dark-theme-shadow-effect" : "shadow-default"
+          }  rounded-lg md:w-[30%] md:shrink md:grow`}
+        >
           <div
             class="card flex-col space-y-6"
             data-aos="fade-up"
@@ -127,13 +141,13 @@ const Portfolio = () => {
               <img src={img3} className="w-[100%] rounded-lg" alt="" />
             </div>
             <div className="cateory flex flex-row justify-between items-center font-medium">
-              <h3 className="text-primary">Development</h3>
+              <h3 className="text-primary text-3xl">Development</h3>
               <h3 className="flex flex-row justify-center items-center space-x-2">
-                <AiOutlineHeart className="text-primary text-lg" />{" "}
+                <AiOutlineHeart className="text-primary text-3xl" />{" "}
                 <span>898</span>
               </h3>
             </div>
-            <h2 className="text-2xl font-normal">Graphic Design</h2>
+            <h2 className="text-2xl font-normal text-4xl">Graphic Design</h2>
           </div>
         </div>
       </div>

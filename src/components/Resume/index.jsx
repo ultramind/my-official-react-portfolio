@@ -18,14 +18,17 @@ const Resume = () => {
   };
 
   return (
-    <div id="resume" className="p-4 my-20 md:p-0 md:py-24 md:mt-0 md:px-6">
+    <div
+      id="resume"
+      className="p-4 my-20 md:p-0 md:py-24 md:mt-0 md:px-6 lg:px-32"
+    >
       <div className="title text-center  space-y-3" data-aos="fade-up">
         <h3 className="text-primary text-2xl">7+ YEARS OF EXPERIENCE</h3>
         <h1 className="font-bold text-6xl">My Resume</h1>
       </div>
       <div className="cardContainer space-y-0 mt-10 p-0">
         {/* card item */}
-        <div className="tab_btn_container flex justify-center space-x-4 md:space-x-14">
+        <div className="tab_btn_container mb-16 flex justify-center space-x-4 md:space-x-14">
           <button
             className={
               toggleState == 1

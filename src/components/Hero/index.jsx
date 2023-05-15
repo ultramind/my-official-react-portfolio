@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import img from "../../assets/images/banner-01.png";
+import img from "../../assets/images/me.png";
+// import img from "../../assets/images/banner-01.png";
 import {
   TbBrandCss3,
   TbBrandGithub,
@@ -148,7 +149,7 @@ const Hero = ({ theme }) => {
       {/* hero image */}
       <div className="right md:w-[50%]" data-aos="fade-left">
         <div
-          className={`img-container p-6 ${
+          className={`img-container p-3 md:p-6 ${
             theme === "dark" ? "box-dark" : "box"
           } mb-8`}
         >
